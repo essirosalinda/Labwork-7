@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contact</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="welcome-card">
+    <img class="profile-image" src="/assets/swan.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle class="center-text"
+        >©Essi Marjoniemi</ion-card-subtitle
+      >
+      <ion-card-title>Like the app?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        <span>😊</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button color="tertiary" expand="block" (click)="sendContact()"
+      >Contact me!<ion-icon class="icon" name="paper-plane-outline"></ion-icon
+    ></ion-button>
+  </ion-toolbar>
+</ion-footer>
